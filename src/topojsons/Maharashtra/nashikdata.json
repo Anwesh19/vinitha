@@ -1,0 +1,80 @@
+{
+    "name": "Nashik",
+    "state": "Maharashtra",
+    "population": 8107187,
+    "area": 15582,
+    "collector":"Shri Suraj Mandhare",
+    "assembly_constituencies": [
+         {
+            "name": "Nashik Central",
+            "mla": "Devayani Pharande",
+            "population": 343278,
+            "male_voters": 188432,
+            "female_voters": 154846
+        },
+        {
+            "name": "Nashik East",
+            "mla": "Balasaheb Sanap",
+            "population": 297440,
+            "male_voters": 159232,
+            "female_voters": 138208
+        },
+        {
+            "name": "Nashik West",
+            "mla": "Seema Hiray",
+            "population": 342172,
+            "male_voters": 181952,
+            "female_voters": 160220
+        },
+        {
+            "name": "Nashik Road",
+            "mla": "Suresh Jain",
+            "population": 330986,
+            "male_voters": 174828,
+            "female_voters": 156158
+        },
+        {
+            "name": "Deolali",
+            "mla": "Rohit Pawar",
+            "population": 282978,
+            "male_voters": 150580,
+            "female_voters": 132398
+        },
+        {
+            "name": "Igatpuri",
+            "mla": "Nirmala Gavit",
+            "population": 300112,
+            "male_voters": 157840,
+            "female_voters": 142272
+        },
+        {
+            "name": "Dindori",
+            "mla": "Nitin Bhosale",
+            "population": 338215,
+            "male_voters": 176432,
+            "female_voters": 161783
+        }
+    ],
+    "parliamentary_constituencies": [
+        {
+            "name": "Nashik",
+            "mp": "Hemant Godse",
+            "population": 2296371,
+            "male_voters": 1222138,
+            "female_voters": 1074233
+        },
+        {
+            "name": "Dindori",
+            "mp": "Bhagwantrao K. Patil",
+            "population": 2875229,
+            "male_voters": 1493711,
+            "female_voters": 1381518
+        }
+    ]
+}
+    
+    
+    
+    
+    
+    

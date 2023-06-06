@@ -1,0 +1,81 @@
+{
+    "name": "Anantapur",
+    "state": "Andhra Pradesh",
+    "population": 9429408,
+    "area": 15643,
+    "collector": "Nagalakshmi",
+    "assembly_constituencies": [
+        {
+            "name": "Anantapur",
+            "mla": "Ram",
+            "population": 279950,
+            "male_voters": 145156,
+            "female_voters": 134794
+        },
+        {
+            "name": "Rayadurg",
+            "mla": "Vishwajeet Kadam",
+            "population": 321478,
+            "male_voters": 174038,
+            "female_voters": 147440
+        },
+        {
+            "name": "Uravakonda",
+            "mla": "Siddharth Shirole",
+            "population": 289450,
+            "male_voters": 156982,
+            "female_voters": 132468
+        },
+        {
+            "name": "Guntakal",
+            "mla": "Madhuri Misal",
+            "population": 335782,
+            "male_voters": 172860,
+            "female_voters": 162922
+        },
+        {
+            "name": "Tadpatri",
+            "mla": "Medha Kulkarni",
+            "population": 398431,
+            "male_voters": 212720,
+            "female_voters": 185711
+        },
+        {
+            "name": "Kalyandurg",
+            "mla": "Chandrakant Balbhim Mokate",
+            "population": 420139,
+            "male_voters": 220718,
+            "female_voters": 199421
+        },
+        {
+            "name": "Raptadu",
+            "mla": "Sunil Tingre",
+            "population": 290728,
+            "male_voters": 153479,
+            "female_voters": 137249
+        },
+        {
+            "name": "Pune (City)",
+            "mla": "Dilip Kamble",
+            "population": 518935,
+            "male_voters": 274528,
+            "female_voters": 244407
+        }
+    ],
+    "parliamentary_constituencies": [
+        {
+            "name": "Hindupur",
+            "mp": "Girish Bapat",
+            "population": 1289919,
+            "male_voters": 679091,
+            "female_voters": 610828
+        },
+        {
+            "name": "Penukonda",
+            "mp": "Supriya Sule",
+            "population": 2476673,
+            "male_voters": 1294353,
+            "female_voters": 1182320
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+        "name": "Pune",
+        "state": "Maharashtra",
+        "population": 9429408,
+        "area": 15643,
+        "collector":"Dr Rajesh Deshmukh",
+        "assembly_constituencies": [
+                {
+                    "name": "Pune Cantonment",
+                    "mla": "Ramesh Bagwe",
+                    "population": 279950,
+                    "male_voters": 145156,
+                    "female_voters": 134794
+                },
+                {
+                    "name": "Kasba Peth",
+                    "mla": "Vishwajeet Kadam",
+                    "population": 321478,
+                    "male_voters": 174038,
+                    "female_voters": 147440
+                },
+                {
+                    "name": "Shivajinagar",
+                    "mla": "Siddharth Shirole",
+                    "population": 289450,
+                    "male_voters": 156982,
+                    "female_voters": 132468
+                },
+                {
+                    "name": "Parvati",
+                    "mla": "Madhuri Misal",
+                    "population": 335782,
+                    "male_voters": 172860,
+                    "female_voters": 162922
+                },
+                {
+                    "name": "Kothrud",
+                    "mla": "Medha Kulkarni",
+                    "population": 398431,
+                    "male_voters": 212720,
+                    "female_voters": 185711
+                },
+                {
+                    "name": "Hadapsar",
+                    "mla": "Chandrakant Balbhim Mokate",
+                    "population": 420139,
+                    "male_voters": 220718,
+                    "female_voters": 199421
+                },
+                {
+                    "name": "Vadgaon Sheri",
+                    "mla": "Sunil Tingre",
+                    "population": 290728,
+                    "male_voters": 153479,
+                    "female_voters": 137249
+                },
+                {
+                    "name": "Pune (City)",
+                    "mla": "Dilip Kamble",
+                    "population": 518935,
+                    "male_voters": 274528,
+                    "female_voters": 244407
+                }
+            ],
+            "parliamentary_constituencies": [
+                {
+                    "name": "Pune",
+                    "mp": "Girish Bapat",
+                    "population": 1289919,
+                    "male_votes": 679091,
+                    "female_votes": 610828
+                },
+                {
+                    "name": "Baramati",
+                    "mp": "Supriya Sule",
+                    "population": 2476673,
+                    "male_votes": 1294353,
+                    "female_votes": 1182320
+                }
+            ]
+}
+        
