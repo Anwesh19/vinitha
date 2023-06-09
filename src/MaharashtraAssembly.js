@@ -12,7 +12,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import ChartDataLabels from 'chartjs-plugin-datalabels';;
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -36,22 +36,28 @@ const MaharashtraAssembly = ({ selectedDistrict}) => {
     plugins: {
       legend: {
         position: 'top',
+        color: 'white'
+
       },
       title: {
         display: true,
         text: 'Bar Chart',
+        color: 'white',
+
       },
       datalabels: {
           display: true,
-          color: 'black'
+          color: 'white',
        }
     },
   scales: {
     x: {
       stacked: true,
+      color:'white'
     },
     y: {
       stacked: true,
+      color:'white'
     },
   },
 };
@@ -61,12 +67,16 @@ const MaharashtraAssembly = ({ selectedDistrict}) => {
       {
         label: 'Male Voters',
         data: districtData.assembly_constituencies.map(function(e) {return e.male_voters;}),
-        backgroundColor: 'white',
+        backgroundColor: '#4d6073',
+        color: 'white'
+
       },
       {
         label: 'Female Voters',
         data: districtData.assembly_constituencies.map(function(e) {return e.female_voters;}),
-        backgroundColor: 'blue',
+        backgroundColor: '#03446A',
+        color: 'white'
+
       }
     ],
   };
@@ -76,49 +86,74 @@ const MaharashtraAssembly = ({ selectedDistrict}) => {
       {
         label: 'Male Voters',
         data: districtData.parliamentary_constituencies.map(function(e) {return e.male_votes;}),
-        backgroundColor: 'white',
+        backgroundColor: '#4d6073',
+        color: 'white'
       },
       {
         label: 'Female Voters',
         data: districtData.parliamentary_constituencies.map(function(e) {return e.female_votes;}),
-        backgroundColor: 'blue',
+        backgroundColor: '#03446A',
+        color: 'white'
       }
     ],
   };
   return (
     <>
-    <div className="state">
-    <div style={{}}>
-    <h1 style={{textAlign:'center'}}>Parliamentary Constituencies of {districtData.name}</h1>
-    {districtData.parliamentary_constituencies.map(parliamentary => (
-          <>
-          <div className="card">
-          <h3 key={parliamentary.name}>{parliamentary.name}</h3>
-          <h4> Mp:{parliamentary.mp}</h4>
-          </div>
-          </>
-          ))}
-      <h1 style={{textAlign:'center'}}>Assembly Constituencies of {districtData.name}</h1>
-      {districtData.assembly_constituencies.map(assembly => (
-        <div key={assembly.name}>
-          <h3>{assembly.name}</h3>
-          <h4>MLA:{assembly.mla}</h4>
-        </div>
-      ))}
-    </div>
-  
-  
-  <div
-      style={{
-        width: "400px",
-        height: "300px"
-      }}
-    >
+    <div className="wrap">
 
-        <Bar options={options} plugins={[ChartDataLabels]} data={data}/>
-        <Bar options={options} plugins={[ChartDataLabels]} data={data_par}/>
-        </div>
-        </div>
+    <div className="tab">
+      <div className="prlmnt">
+        <h3 >Parliamentary Constituencies of {districtData.name}</h3>
+        <table>
+          <thead>
+          <tr>
+            <th>parliament</th>
+            <th>MP</th>
+          </tr>
+          </thead>
+        </table>
+          
+          {districtData.parliamentary_constituencies.map(parliamentary => (
+          <table >
+            <tbody>
+            <tr>
+              <td>{parliamentary.name}</td>
+              <td> {parliamentary.mp}</td>
+            </tr>
+            </tbody>
+          </table>
+          ))}
+
+      </div>
+      <div className="asmbly">
+      <h3 >Assembly Constituencies of {districtData.name}</h3>
+      <table>
+        <tr>
+            <th>Assembly</th>
+            <th>MLA</th>
+        </tr>
+      </table>
+        {districtData.assembly_constituencies.map(assembly => (
+        <table >
+          <tr>
+            <td>{assembly.name}</td>
+            <td>{assembly.mla}</td>
+          </tr>
+        </table>
+        
+      ))}
+      </div>
+  
+  
+      
+
+
+    </div>
+    <div className="graph" style={{width: "400px",height: "300px"}}>
+        <Bar className="bar" options={options} plugins={[ChartDataLabels]} data={data_par}/>
+        <Bar className="bar" options={options} plugins={[ChartDataLabels]} data={data}/>
+    </div>
+    </div>
         
   </>
 );

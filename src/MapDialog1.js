@@ -7,7 +7,7 @@ import telangana from './topojsons/states/telangana.json';
 import maharashtra from './topojsons/states/maharashtra.json';
 import andhrapradesh from './topojsons/states/andhrapradesh.json';
 import Telangana from './Telangana';
-import './App1.css'
+import './App1.css';
 import BackIcon from '@material-ui/icons/FirstPage';
 
 const MapDialog1 = (props) => {

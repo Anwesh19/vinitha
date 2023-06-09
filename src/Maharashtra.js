@@ -57,7 +57,7 @@ const Maharashtra = ({ selectedDistrict ,setShowDistrict}) => {
   if (selectedDistrict === 'Pune') {
     geoURL = Pune;
     scaleMap = 8000;
-    centerMap = [76, 18.5236];
+    centerMap = [76, 18.7];
   } 
   if (selectedDistrict === 'Nashik') {
     geoURL = Nashik;
@@ -332,7 +332,6 @@ const Maharashtra = ({ selectedDistrict ,setShowDistrict}) => {
         </ZoomableGroup>
       </ComposableMap>
       <h5 className="stname">{ selectedDistrict}</h5>
-      {/* <BackIcon id='close'  onClick={props.closeModal}/> */}
       <div className="container">
         <div className="card">
           <div className="content">
@@ -374,7 +373,7 @@ const Maharashtra = ({ selectedDistrict ,setShowDistrict}) => {
                   </div>
                 </div>
               </div>
-              <Link className="card" onClick = {() => {setShowDistrict(true);}}>
+              <Link className="card link" onClick = {() => {setShowDistrict(true);}}>
                 {selectedDistrict} Constituencies
               </Link>
 

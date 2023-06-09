@@ -3,6 +3,7 @@
     background-image:linear-gradient(#a3acb1 , #4d6073);
     background-repeat: no-repeat !important;
     height: 100vdh;
+    /* overflow-y: hidden; */
   } 
 .statep{
   position: fixed;
@@ -36,11 +37,8 @@
 } */
 .card {
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
   width: 200px;
   height: 70px;
-  /* margin: -150px; */
   perspective: 800px;
   background: transparent;
   border-radius: 20px;
@@ -110,16 +108,7 @@
   top:60%;
   left:72%;
 }
-.link{
-  text-decoration: none;
-  font-weight: 400;
-  color: #03446A;
-  font-size: 20px;
-  /* width: 200px;
-  height:200px; */
-  border: 5px solid #03446A ;
-  padding: 5px 8px 5px 8px;
-}
+/* ************ */
 #close{
   position: absolute;
   top: 5%;
@@ -129,5 +118,84 @@
   background: transparent;
 }
 #close:hover{
-  color: #4d6073;
+  color: #fff;
+}
+.link{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  background-color: #03446A;
+  border: 2px solid #fff;
+  padding: 10px 2px 2px 2px;
+  text-align: center;
+  /* align-items: center; */
+  /* height: 6%; */
+}
+.link:hover{
+  background-color: transparent;
+  color: #03446A;
+  font-weight: 500;
+}
+/* *************** */
+
+.wrap{
+  display: flex;
+  background-image:linear-gradient(#a3acb1 , #4d6073);
+  height: 100vh;
+}
+.tab{
+  width: 50%;
+}
+.graph{
+  width: 50%;
+}
+.prlmnt, .asmbly{
+  color:#03446A;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  /* background-color: #7bb8f4; */
+  /* display: flex; */
+}
+
+th{
+  background-color: rgba(255,255,255,0.3);
+  width: 50%;
+  align-items: left;
+  padding: 8px;
+}
+table{
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 100%;
+  text-transform: uppercase;
+  border-collapse: collapse;
+  margin-left: 40px;
+}
+/* td{
+  align-items: left;
+  width: 50%;
+} */
+td,tr{
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  align-items: left;
+  width: 50%;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color:rgba(255,255,255,0.6) ;
+}
+tr:hover{
+  background-color: #03446A;
+  color: #fff;
+}
+h3{
+  margin-left: 35px;
+  text-transform: uppercase;
+
+}
+.graph{
+  /* position: relative; s*/
+  margin-left: 100px;
+  margin-top:0px;
+  /* width: 50%; */
+  position: relative;
 }
